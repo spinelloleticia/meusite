@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotlin - Linguagens de Programação</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      color: white;
+    }
+
+    h1 {
+      color: #64ffda;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 20px;
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>O que É Kotlin?</h1>
+
+<p>Kotlin é uma linguagem de programação criada pela JetBrains (a mesma empresa por trás do IntelliJ IDEA) e lançada oficialmente em 2016. Desde 2019, o Google a considera a linguagem preferencial para desenvolvimento Android, e desde então ela só cresceu. <br>
+
+Kotlin roda na JVM (Java Virtual Machine), o que significa que ela é 100% interoperável com Java. Mas não para por aí: Kotlin também compila para JavaScript e código nativo, graças ao Kotlin Multiplatform</p>
+
+
+<h1>Por que Kotlin está tão popular?</h1>
+<p>A resposta é simples: produtividade. Kotlin foi projetada para resolver as dores de cabeça que os desenvolvedores Java enfrentam há anos. Código verboso, NullPointerException, boilerplate excessivo — tudo isso fica no passado com Kotlin.</p>
+<p>Alguns pontos que fazem Kotlin brilhar: <br>
+1. Sintaxe concisa: você escreve menos código pra fazer a mesma coisa; <br>
+2. Null Safety: o compilador te protege de erros com nulo; <br>
+3. Interoperabilidade com Java: dá pra usar qualquer biblioteca Java; <br>
+4. Coroutines: programação assíncrona sem dor de cabeça; <br>
+5. Multiplataforma: um só código pra Android, iOS, web e backend.
+</p>
+
+<h2>Seu primeiro programa em Kotlin</h2>
+<p>Vamos ao que interessa: código! O clássico “Hello, World!” em Kotlin é assim:</p>
+<img src="hellokot.jpeg" alt="kot"> <br>
+<p>Repare que não precisa de classe, não precisa de public static void main(String[] args). Direto ao ponto.</p>
+
+<h2>Variáveis em Kotlin</h2>
+<p>Kotlin tem dois tipos de variáveis: val (imutável) e var (mutável).</p>
+<img src="varkot.jpg" alt="var"> <br>
+<p><i>A dica é:</i> prefira val sempre que possível. Imutabilidade torna seu código mais previsível e seguro.</p>
+
+<h2>Funções em Kotlin</h2>
+<p>Declarar funções em Kotlin é bem direto:</p>
+<img src="funcikot.jpeg" alt="funcikot"> <br>
+<p>Percebeu o $nome dentro da string? Isso é string template, e é uma mão na roda!</p>
+
+<h2>Classes e Data Classes</h2>
+<p>Em Kotlin, criar classes é muito mais enxuto do que em Java:</p>
+<img src="clakot.jpeg" alt="clakot"> <br>
+<p>A data class é um dos recursos mais amados por quem usa Kotlin. Aquele tanto de boilerplate que você escrevia em Java (getters, setters, equals, hashCode) simplesmente desaparece.</p>
+
+<h2>Controle de fluxo com when</h2>
+<p>O when do Kotlin é o switch do Java, só que muito mais poderoso:</p>
+<img src="fluxokot.jpeg" alt="fluxo"> <br>
+
+<h1>Como começar a estudar Kotlin</h1>
+<p>Se bateu aquela vontade de aprender, aqui vai um roteiro prático:</p>
+<p>1. Instale o IntelliJ IDEA Community (gratuito) ou use o <a href="https://play.kotlinlang.org/">Kotlin PlayGround.</a> <br>
+2. Faça os Kotlin Koans — exercícios interativos oficiais da JetBrains <br>
+3. Leia a documentação oficial em <a href="https://kotlinlang.org/">Kotlinlang.org</a> <br>
+4. Crie um projeto pessoal — nada melhor para fixar do que colocar a mão na massa <br>
+5. Curso Alura: <a href="https://www.alura.com.br/formacao-kotlin">Formação Kotlin</a></p>
+
+<h1>Onde Kotlin é usado?</h1>
+<p>Kotlin não é só pra Android. Veja onde a linguagem brilha:</p>
+
+<p>1. Android: linguagem oficial recomendada pelo Google, usada por mais de 95% dos top 1000 apps da Play Store <br>
+2. Backend: com Spring Boot, Ktor, Quarkus e Micronaut — grandes empresas como Nubank, Mercado Livre e iFood usam Kotlin no servidor <br>
+3. Multiplataforma: Kotlin Multiplatform (KMP) permite compartilhar lógica de negócio entre Android, iOS, web e desktop com um único código-base <br>
+4. Scripting: automação de tarefas com scripts .kts, incluindo build scripts do Gradle (build.gradle.kts) <br>
+5. Data Science: com bibliotecas como Kotlin DataFrame, KotlinDL e integração com Jupyter Notebooks via Kotlin Kernel <br>
+6. Desenvolvimento web: Kotlin/JS permite compilar Kotlin para JavaScript, incluindo integração com frameworks como React via wrappers oficiais.</p>
+
+<h1>Conclusão</h1>
+<p>Kotlin é uma linguagem versátil e poderosa, ideal para quem deseja desenvolver aplicativos modernos e eficientes. <br>
+Se você está pensando em aprender uma nova linguagem, Kotlin é uma escolha certeira. Outras linguagens modernas que vale conhecer incluem Go, Rust e Python — cada uma com seus pontos fortes.</p>
+
+<h2>Cursos</h2>
+<a href="https://www.udemy.com/course/curso-desenvolvimento-android-com-kotlin/?funnel=&msclkid=665883e1a81e1f8ff75ae9c6977f0ce2&portfolio=Bing-Brazil&test=&utm_audience=mx&utm_campaign=BG-MX_FF-CONV_BR_Search-NB_Keyword_Beta_la.PT&utm_campaign_id=638689062&utm_content=o&utm_medium=paid-search&utm_source=bing&utm_tactic=nb&utm_term=_._ag_1327113096538205_._ad__._kw_programando+com+kotlin&couponCode=KEEPLEARNING">Udemy | Curso Completo de Kotlin</a> <br>
+<a href="https://www.rocketseat.com.br/formacao/kotlin">Rocketseat | Formação Android com Kotlin</a> <br>
+<a href="https://www.alura.com.br/formacao-kotlin">Alura | Programação Linguagem Kotlin</a> <br>
+
+
+<img src="" alt="">
+
+    <a href="../index.html" class="voltar">← Voltar para as linguagens</a>
+  </main>
+</body>
+</html>

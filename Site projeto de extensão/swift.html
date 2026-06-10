@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift - Linguagens de Programação</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      color: white;
+    }
+
+    h1 {
+      color: #64ffda;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 20px;
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+
+    a { color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>O que é Swift e Por que aprender?</h1>
+<p>Swift é uma linguagem de programação poderosa e intuitiva criada pela Apple em 2014 para construir aplicativos em iOS, macOS, watchOS e tvOS. Ela foi projetada para ser rápida, moderna e fácil de usar, oferecendo uma sintaxe limpa e muitos recursos que ajudam os desenvolvedores a escrever código mais seguro e eficiente. Swift é altamente considerada por seu desempenho, legibilidade e recursos de segurança, como gerenciamento automático de memória e suporte integrado para tratamento de erros. Além disso, Swift funciona perfeitamente com as estruturas da Apple, como UIKit e SwiftUI, tornando-a a linguagem ideal para desenvolver aplicações no ecossistema da Apple.</p>
+<h3>Aprender Swift oferece diversas vantagens:</h3>
+<p>1. Desenvolvimento para o ecossistema Apple: Swift é a linguagem principal para criar apps para iPhone, iPad, Mac, Apple Watch e Apple TV. <br>
+2. Linguagem moderna e segura: Swift incorpora os mais recentes conceitos de programação e possui recursos de segurança que ajudam a evitar erros comuns. <br>
+3. Alto desempenho: Swift é uma linguagem compilada otimizada para oferecer excelente desempenho. <br>
+4. Comunidade ativa e crescente: A comunidade Swift é vibrante e oferece amplo suporte e recursos para desenvolvedores. <br>
+5. Código aberto: Swift é uma linguagem de código aberto, o que significa que é gratuita para usar e distribuir.</p>
+
+<h1>Instalação e Configuração do Ambiente Swift e XCode</h1>
+<p>Para começar a programar em Swift, você precisará instalar o Xcode, o ambiente de desenvolvimento integrado (IDE) da Apple, que está disponível gratuitamente na App Store do macOS. O Xcode inclui o compilador Swift, bibliotecas e ferramentas necessárias para criar, testar e depurar aplicativos Swift. </p>
+<p>1. Baixe o Xcode na Mac App Store ou no site da Apple Developer. <br>
+2. Instale o Xcode seguindo as instruções na tela. <br>
+3. Após a instalação, inicie o Xcode. <br>
+4. Crie um novo projeto ou use um playground para experimentar o código Swift.</p>
+<p>Playgrounds são ambientes interativos onde você pode escrever código Swift e ver os resultados imediatamente, sem a necessidade de criar um projeto completo. Eles são ideais para aprender a sintaxe básica e experimentar novos recursos da linguagem</p>
+
+<h1>Sintaxe Básica e Fundamentos da Linguagem Swift</h1>
+<p>Swift possui uma sintaxe clara e concisa, facilitando a leitura e escrita do código. Alguns dos fundamentos da linguagem incluem:</p>
+<p>1. Variáveis e constantes: Variáveis são usadas para armazenar valores que podem mudar ao longo do tempo, enquanto constantes armazenam valores que não podem ser alterados. <br>
+2. Tipos de dados: Swift oferece vários tipos de dados, como Int para números inteiros, Double para números de ponto flutuante, Bool para valores booleanos (verdadeiro ou falso) e String para texto. <br>
+3. Operadores: Swift suporta uma variedade de operadores para realizar operações matemáticas, lógicas e de comparação. <br>
+4. Estruturas de controle: As estruturas de controle, como if, else if, else e switch, permitem que você execute diferentes blocos de código com base em condições. <br>
+5. Loops: Os loops, como for e while, permitem que você execute um bloco de código repetidamente. <br>
+6. Funções: Funções são blocos de código reutilizáveis que realizam uma tarefa específica.</p>
+
+<h1>Tipos de Dados e Coleções em Swift</h1>
+<p>Swift oferece uma variedade de tipos de dados para representar diferentes tipos de valores. Além dos tipos básicos como Int, Double, Bool e String, Swift também fornece tipos de coleção poderosos:</p>
+<p>Arrays: Arrays são coleções ordenadas de valores do mesmo tipo. <br>
+Sets: Sets são coleções não ordenadas de valores únicos do mesmo tipo. <br>
+Dictionaries: Dictionaries são coleções de pares chave-valor, onde cada chave é associada a um valor.</p>
+
+<h1>Programação Orientada a Objetos (POO) em Swift</h1>
+<p>Swift é uma linguagem orientada a objetos, o que significa que ela suporta os princípios da POO, como encapsulamento, herança e polimorfismo.</p>
+<p>1. Classes: Classes são modelos para criar objetos. Elas podem conter propriedades (variáveis) e métodos (funções). <br>
+2. Objetos: Objetos são instâncias de classes. <br>
+3. Herança: Herança permite que uma classe herde propriedades e métodos de outra classe. <br>
+4. Polimorfismo: Polimorfismo permite que objetos de diferentes classes sejam tratados de forma uniforme.</p>
+
+<h1>Optinals e Tratamento de Erros em Swift</h1>
+<p>Optionals são um recurso importante em Swift que ajudam a lidar com a ausência de um valor. Um optional pode conter um valor ou ser nil, indicando que não há valor presente. Para acessar o valor de um optional, você precisa desembrulhá-lo usando um dos seguintes métodos:</p>
+<p>1. Forced unwrapping: Usar o operador ! para forçar o desembrulho do optional. No entanto, se o optional for nil, isso causará um erro em tempo de execução. <br>
+2. Optional binding: Usar if let ou guard let para desembrulhar o optional de forma segura e executar um bloco de código somente se o optional contiver um valor. <br>
+3. Nil coalescing operator: Usar o operador ?? para fornecer um valor padrão caso o optional seja nil.</p>
+
+<p>Swift também possui um sistema de tratamento de erros robusto que permite que você lide com erros de forma controlada. Você pode usar try, catch e throw para capturar e tratar erros que podem ocorrer durante a execução do seu código.</p>
+
+<h1>FrameWorks e Libraries Populares em Swift</h1>
+<p>Swift possui um ecossistema rico de frameworks e bibliotecas que podem ajudá-lo a acelerar o desenvolvimento de seus aplicativos. Alguns dos frameworks e bibliotecas mais populares incluem:</p>
+<p>1. UIKit: Framework para criar interfaces de usuário para aplicativos iOS e tvOS. <br>
+2. SwiftUI: Framework moderno e declarativo para construir interfaces de usuário em todas as plataformas Apple. <br>
+3. Combine: Framework para processamento de dados assíncronos e reativos. <br>
+4. Vapor: Framework para construir aplicativos web e APIs em Swift.</p>
+
+<h1>Escrevendo seu Primeiro Código</h1>
+<p>No Xcode, crie um novo playground (um ambiente interativo para aprender Swift). Digite o seguinte código:</p>
+<img src="hellosw.png" alt="hellosw"> <br>
+<p>Com apenas essa linha, você verá "Hello, Swift!" aparecer no console.</p>
+
+<h2>Explorando os fundamentos</h2>
+<p>Aqui estão alguns conceitos básicos que você pode experimentar no playground:</p>
+
+<h3>Variáveis e constantes</h3>
+<p>Use var para criar variáveis e let para constantes:</p>
+<img src="varsw.png" alt="varsw"> <br>
+
+<h3>Estruturas de controle</h3>
+<p>Explore loops e condicionais:</p>
+<img src="forsw.png" alt="forsw"> <br>
+
+<h3>Funções</h3>
+<p>Organize seu código em funções:</p>
+<img src="funcisw.png" alt="funcisw">
+
+<h1>Criando seu primeiro projeto</h1>
+<p>Depois de se familiarizar com os fundamentos, é hora de criar um aplicativo básico no Xcode.</p>
+<p>1. Inicie um novo projeto: Selecione "iOS App" e configure os detalhes do aplicativo. <br>
+2. Adicione uma interface: Use o Interface Builder para arrastar e soltar elementos, como botões e labels. <br>
+3. Implemente a lógica: Conecte os elementos visuais ao código Swift no arquivo ViewController.swift.
+</p>
+
+<p>Um exemplo simples é criar um botão que exibe uma mensagem ao ser clicado. Experimente adicionar a seguinte ação:</p>
+<img src="criandosw.png" alt="criandosw">
+
+<h1>Recursos e dicas para aprofundar</h1>
+<p>1. Swift Playgrounds: Um aplicativo interativo disponível no iPad e no Mac, perfeito para iniciantes. <br>
+2. Documentação oficial: Acesse o Swift.org para explorar a documentação completa e as novidades da linguagem. <br>
+3. Comunidades de desenvolvedores: Participe de fóruns e eventos como o WWDC para se conectar com outros devs. E pode se juntar à comunidade da Rocketseat, a maior comunidade de desenvolvedores da América Latina, no Discord. Lá você encontrará milhares de pessoas apaixonadas por programação, prontas para trocar ideias, tirar dúvidas e compartilhar conhecimento.</p>
+
+<h1>Conclusão</h1>
+<p>Swift é a chave para transformar ideias em aplicativos incríveis e conquistar um lugar de destaque no mundo da programação. E aqui vai um convite especial: que tal mergulhar ainda mais fundo nesse universo?
+No vídeo a baixo a Gi Moeller te pega pela mão para explorar o universo Swift na prática. Nele você vai dar o primeiro passo para conhecer melhor o ecossistema dessa linguagem criada pela Apple, perfeita para o desenvolvimento de apps mobile e que oferece um processo de programação eficiente e intuitivo.</p>
+<a href="https://youtu.be/4eC49rYeugs?si=Zpd_jbAIe5yqjbj5">Introdução ao SwiftUI</a> <br>
+
+<h2>Cursos</h2>
+<a href="Udemy https://www.udemy.com/course/swift-fundamentos/">Udemy | Swift Essencial: Dominando os Fundamentos</a> <br>
+<a href="https://www.alura.com.br/curso-online-swift-entendendo-linguagem">Alura | Swift: Entendendo a Linguagem</a> <br>
+
+<img src="" alt="">
+
+    <a href="../index.html" class="voltar">← Voltar para as linguagens</a>
+  </main>
+</body>
+</html>

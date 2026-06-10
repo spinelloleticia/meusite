@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linguagens de Programação</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="python.html">
+  <link rel="stylesheet" href="js.html">
+
+<style>
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(110, 231, 255, 0.6);
+}
+
+.destaque{
+    width: fit-content;
+    margin: 25px auto;
+    padding: 15px 25px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(110,231,255,0.4);
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(110,231,255,0.2);
+}
+ .boas-vindas{
+    max-width: 900px;
+    margin: 20px auto 35px auto;
+    text-align: center;
+    color: white;
+    animation: subir 1.5s ease-out;
+}
+
+.boas-vindas h2{
+    color: #6ee7ff;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.boas-vindas p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #d1d5db;
+    font-family: 'poppins';
+}
+
+@keyframes subir{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  </style>
+
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#">Início</a></li> <br>
+    </ul>
+  </aside>
+
+  <main>
+  <section class="boas-vindas">
+    <h2>Bem-vindo ao Guia de Linguagens de Programação!</h2> <br> <br>
+
+    <div class="destaque">
+        Selecione uma linguagem abaixo e comece sua jornada de aprendizado!
+</div>
+</section> 
+  
+  <div class="container">
+
+  <a href="python.html" class="card">
+      <img src="pyt.png" alt="" class="icon">
+      <h2>PYTHON</h2>
+  </a>
+
+  <a href="js.html" class="card">
+      <img src="js.png.WEBP" alt="" class="icon">
+      <h2>JAVASCRIPT</h2>
+  </a>
+
+   <a href="assmbly.html" class="card">
+      <img src="assembly.PNG" alt="" class="icon">
+      <h2>ASSEMBLY</h2>
+  </a>
+
+  <a href="java.html" class="card">
+      <img src="java.png.WEBP" alt="" class="icon">
+      <h2>JAVA</h2>
+  </a>
+
+  <a href="ccharp.html" class="card">
+      <img src="cshar.png" alt="" class="icon">
+      <h2>C#</h2>
+  </a>
+  
+  <a href="cmais.html" class="card">
+      <img src="cmaismais.png" alt="" class="icon">
+      <h2>C++</h2>
+  </a>
+
+  <a href="kotlin.html" class="card">
+      <img src="kotlin.png" alt="" class="icon">
+      <h2>KOTLIN</h2>
+  </a>
+
+  <a href="swift.html" class="card">
+      <img src="swift.png" alt="" class="icon">
+      <h2>SWIFT</h2>
+  </a>
+
+  </div>
+  </div>
+  </main>
+
+</body>  
+</html>

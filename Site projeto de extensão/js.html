@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Linguagens de Programação</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      color: white;
+    }
+
+    h1 {
+      color: #64ffda;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 20px;
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>O que é JavaScript?</h1>
+  <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web. Toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática, mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados e etc, você pode apostar que o JavaScript provavelmente está envolvido. <br>
+  É a terceira camada do bolo das tecnologias padrões da web, duas das quais (HTML e CSS) nós falamos com mais detalhes ao longo do nosso resumo.</p>
+<img src="bolojs.png" alt="bolojs"> <br>
+
+<p> <b><i>HTML</b></i> - É a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página. <br>
+<b><i>CSS</b></i> - É uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas. <br>
+<b><i>JavaScript</b></i> - É uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de interessante. Ok, não tudo, mas é maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.</p>
+
+<P>O que é ainda mais empolgante é a funcionalidade construída no topo do núcleo da linguagem JavaScript. As APIs (Application Programming Interfaces - Interface de Programação de Aplicativos) proveem a você superpoderes extras para usar no seu código JavaScript. <br>
+
+APIs são conjuntos prontos de blocos de construção de código que permitem que um desenvolvedor implemente programas que seriam difíceis ou impossíveis de implementar. Eles fazem o mesmo para a programação que os kits de móveis prontos para a construção de casas - é muito mais fácil pegar os painéis prontos e parafusá-los para formar uma estante de livros do que para elaborar o design, sair e encontrar a madeira, cortar todos os painéis no tamanho e formato certos, encontrar os parafusos de tamanho correto e depois montá-los para formar uma estante de livros.</P>
+
+<h3>Elas geralmente se dividem em duas categorias</h3>
+<p><b>APIs de navegadores</b> que já vem implementadas no navegador, e são capazes de expor dados do ambiente do computador, ou fazer coisas complexas e úteis. Por exemplo:</p>
+<p>1. A API DOM (Document Object Model) permite a você manipular HTML e CSS, criando, removendo e mudando HTML, aplicando dinamicamente novos estilos para a sua página, etc. Toda vez que você vê uma janela pop-up aparecer em uma página, ou vê algum novo conteúdo sendo exibido (como nós vimos acima na nossa simples demonstração), isso é o DOM em ação. <br>
+2. A API de Geolocalização recupera informações geográficas. É assim que o Google Maps consegue encontrar sua localização e colocar em um mapa. <br>
+3. As APIs Canvas e WebGL permite a você criar gráficos 2D e 3D animados. Há pessoas fazendo algumas coisas fantásticas usando essas tecnologias web — veja Chrome Experiments e webglsamples. <br>
+4. APIs de áudio e vídeo como HTMLMediaElement e WebRTC permitem a você fazer coisas realmente interessantes com multimídia, tanto tocar música e vídeo em uma página da web, como capturar vídeos com a sua câmera e exibir no computador de outra pessoa (veja Snapshot demo para ter uma ideia).</p>
+<p><i>OBS:</i> Muitas demonstrações acima não vão funcionar em navegadores antigos — quando você for experimentar, é uma boa ideia usar browsers modernos como Firefox, Edge ou Opera para ver o código funcionar. Você vai precisar estudar testes cross browser com mais detalhes quando você estiver chegando perto de produzir código (código real que as pessoas vão usar).</p> <br>
+
+<P><B>APIs de terceiros</B> não estão implementados no navegador automaticamente, e você geralmente tem que pegar seu código e informações em algum lugar da Web. Por exemplo:</P>
+<p>1. A API do Twitter permite a você fazer coisas como exibir seus últimos tweets no seu website. <br>
+2. A API do Google Maps permite a você inserir mapas customizados no seu site e outras diversas funcionalidades.</p>
+<p><i>OBS:</i> Essas APIs são avançadas e nós não vamos mais afundo sobre nenhuma delas nesse resumo.</p>
+
+<h1>Variáveis</h1>
+<p>Variáveis são espaços reservados na memória para armazenar informações que podem ser utilizadas posteriormente pelo programa. <br>
+Em JavaScript, as variáveis podem ser declaradas utilizando <b>let, const ou var (menos utilizado atualmente)</b></p>
+<p><span style="color: blueviolet;">let</span> nome = <span style="color: green;">"Letícia"</span>; <br>
+<span style="color: blueviolet;">const</span> idade = <span style="color:orangered;">20</span>;</p>
+
+
+<p>Há uma diferença muito importante entre as declarações de variáveis com var, let e const.</p>
+<p><i><b>OBS:</b></i> let - Permite alterar o valor posteriormente. <br>
+const - Cria uma constante, cujo valor não pode ser reatribuído.</p>
+
+<p><span style="color: blueviolet;">let</span> cidade = <span style="color: green;">"São Paulo"</span>; <br>
+cidade = <span style="color: green;">"Rio de Janeiro</span>;</p>
+
+<p><span style="color: blueviolet;">const</span> pais = <span style="color: green;">"Brasil"</span>; <br>
+<span style="color:gray;">// pais = "Argentina"; // ERRO</span></p>
+
+<h1>Tipos de Dados</h1>
+<p>Os tipos de dados definem quais informações podem ser armazenadas em uma variável.</p>
+<h3>String</h3>
+<p>Representa textos: <br>
+<span style="color: blueviolet;">let</span> nome = <span style="color: green;">"Guilherme"</span></p>
+ 
+<h3>Number</h3>
+<p>Representa números inteiros ou decimais: <br>
+<span style="color: blueviolet;">let</span> idade = <span style="color: orangered;">25;</span>; <br>
+<span style="color: blueviolet;">let</span> altura = <span style="color:orangered;">1.75;</span>;</p>
+
+<h3>Boolean</h3>
+<p>Representa valores lógicos: <br>
+<span style="color: blueviolet;">let</span> aprovado = <span style="color: rgb(70, 70, 126);">true;</span>; <br>
+<span style="color: blueviolet;">let</span> ativo = <span style="color:rgb(70, 70, 126) ;">false;</span>;</p>
+
+<h3>Null</h3>
+<p>Representa ausência intencional de valor: <br>
+<span style="color: blueviolet;">let</span> usuario = <span style="color:rgb(65, 65, 156) ;">null;</span>;</p>
+
+<h3>Undefined</h3>
+<p>Significa que uma variável foi criada, mas ainda não recebeu valor: <br>
+<span style="color: blueviolet;">let</span> endereco;</span></p>
+
+<h1>Operadores</h1>
+<p>Operadores são símbolos utilizados para realizar operações.</p>
+
+<h3>Operadores Aritméticos</h3>
+<p> +  // Soma <br>
+-  // Subtração <br>
+*  // Multiplicação <br>
+/  // Divisão <br>
+%  // Resto da divisão</p> 
+
+<p>Exemplo: <br>
+<span style="color: blueviolet;">let</span> resultado = <span style="color: orangered;">10 + 5;</span></p>
+
+<h3>Operadores de compração</h3>
+<p>São usados para comparar valores</p>
+<p>==   // Igual <br>
+===  // Estritamente igual <br>
+!=   // Diferente <br>
+>    // Maior que <br>
+<    // Menor que <br>
+>=   // Maior ou igual <br>
+<=   // Menor ou igual</p>
+
+<p>Exemplo: <br>
+console.log (<span style="color: orangered;">10 + 5;</span>)</p>
+<p><b>Resultado:</b> <br>
+<span style="color: green"> true</span></p>
+ 
+<h1>Estruturas Condicionais</h1>
+<p>As estruturas condicionais permitem que o programa tome decisões.</p>
+
+<h3>If e Else</h3>
+<p>Executam diferentes blocos de código dependendo da condição.</p>
+
+<p>Exemplo: <br>
+let idade = 18; <br>
+
+if (idade >= 18) { <br>
+    console.log("Maior de idade"); <br>
+} else {
+    console.log("Menor de idade"); <br>
+}</p>
+
+<h1>Estruturas de Repetição</h1>
+<p>Laços de Repetição executam um bloco de código várias vezes.</p>
+
+<h3>For</h3>
+<p>Muito utilizado quando sabemso quantas vezes o código será repetido.</p>
+
+<h3>While</h3>
+<p>Executa enquanto uma condição for verdadeira.</p>
+
+<h1>Funções</h1>
+<p>Funções são blocos de código criados para executar tarefas específicas. <br>
+Elas ajudam a organizar o programa e evitar repetição de código, e são chamadas apenas quando chamadas.</p>
+
+<h3>Principais formatos</h3>
+<p>A linguagem permite diferentes formas de criar e estruturar funções. As três principais abordagens são: <br>
+<b>1. Declaração de Função (Function Declaration)</b> É a forma clássica. A Função é içada (hoisted), ou seja, pode ser chamada antes mesmo de ser declarada no código. <br>
+<b>2. Expreção de Função (Function Expression)</b> A função é armazenada dentro de uma variável. Neste caso, ela não sofre <i>hoisting</i> e só pode ser chamada após a sua definição. <br>
+<b>2. Arrow Functions</b> Introduzidas no ES6, oferecem uma sintaxe mais curta e limpa. Elas não possuem o seu próprio contexto de <i>this</i>. <br>
+<b>3. Arrays São estruturas que armazenam vários valores em uma única variável</b></p>
+
+
+<p>Para uma explicação mais visual sobre como as funções operam nos bastidores e ajudam a manter seu código organizado e reutilizável: <a href="https://www.youtube.com/live/9cTLoyCRLsY?si=8smD4_MzqsU1nqOC">O que é uma função e para quê serve em JavaScript?</a></p>
+
+<h3>Parâmetros e Retornos</h3>
+<p>As funções podem receber <b>parâmetros</b>, que são valores passados para a função executar sua tarefa. <br>
+Os argumentos são os valores passados quando chamamos afunção. Você também pode definir valores padrão para os parâmetros da função. Se o argumento não for fornecido, a função usa o valor padrão.</p>
+
+<h3>Retorno de Valores</h3>
+<p><b>Return</b> é a palavra-chave usada para enviar o resultado da função de volta para o código que a chamou. Se a função não usar <b><i>return</i></b> ela retorna <b><i>undefined</i></b> por padrão.</p>
+
+<h1>Objetos</h1>
+<p>Objetos permitem armazenar informações organizadas em pares de chave e valor. <br>
+São amplamente utilizados para representar usuários, produtos, pedidos e duversas informações de aplicações reais.</p>
+
+<h3>Manipulação do DOM</h3>
+<p>DOM (Document Object Model) é a representação da página HTML que o JavaScript utiliza para acessar e modificar elementos</p>
+<img src="elefunci.jpeg" alt="elefunci"> <br>
+<p>A manipulação do DOM é uma das funcionalidades mais importantes do JavaScript no desenvolvimento web.</p>
+
+<h1>Entrada e Saída de dados</h1>
+<img src="esdados.jpeg" alt="esdados"> <br>
+<p>O console é muito utilizado para testes e depuração de programas.</p>
+
+<h1>Boas Práticas em JavaScript</h1>
+<p>Utilize nomes de variáveis claros e significativos. <br>
+Prefira const sempre que possível. <br>
+Organize o código em funções. <br>
+Evite repetir código desnecessariamente. <br>
+Mantenha a indentação correta. <br>
+Comente apenas quando necessário para facilitar a compreensão. <br>
+Utilize o console para testar e identificar erros.</p>
+
+<p>Seus primeiros passos no JavaScript: <a href="https://youtu.be/OHN8Ze4te70?si=BiUxZ8NwCYwvagbp">JS com Maik Brito | Roketseat</a></p>
+
+<h1>Conclusão</h1>
+<p>JavaScript é a principal linguagem de programação da web e está presente em praticamente todos os sites modernos. Seu papel é adicionar dinamismo e interatividade às páginas, permitindo criar desde simples efeitos visuais até aplicações complexas. <br>
+
+Para quem está começando, é fundamental compreender os conceitos de variáveis, tipos de dados, operadores, estruturas condicionais, laços de repetição, funções, arrays, objetos, manipulação do DOM e eventos. Esses conceitos formam a base necessária para avançar no desenvolvimento web e aprender frameworks modernos como React, Vue e Angular.</p>
+
+<h2>Cursos</h2>
+<a href="https://www.udemy.com/course/curso-web/?funnel=&msclkid=f892bce75d8c118a7ec9d6c01d0e92e2&portfolio=Bing-Brazil&test=&utm_audience=mx&utm_campaign=BG-MX_FF-CONV_BR_Search-NB_Keyword_Alpha_la.PT&utm_campaign_id=638689061&utm_content=o&utm_medium=paid-search&utm_source=bing&utm_tactic=nb&utm_term=_._ag_1320516026610887_._ad__._kw_curso+javascript">Udemy | Curso Completo de JavaScript</a> <br>
+<a href="https://www.alura.com.br/cursos-online-front-end/javascript">Alura | Curso JavaScript</a> <br>
+
+
+<img src="" alt="">
+
+    <a href="../index.html" class="voltar">← Voltar para as linguagens</a>
+  </main>
+</body>
+</html>

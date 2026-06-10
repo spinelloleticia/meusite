@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C# - Linguagens de Programação</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      color: white;
+    }
+
+    h1 {
+      color: #64ffda;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 20px;
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>O que é C#?</h1>
+    <P>A C# (lê-se “C sharp”) é a principal linguagem de programação em .NET. Inclusive, ela surgiu com a primeira versão da plataforma, em 2002. <br>
+
+Com C# é possível desenvolver aplicações de praticamente todos os tipos: desde aplicações embarcadas até aplicativos de área de trabalho, mobile e sistemas web. <br>
+
+Como é orientada a objetos, é possível criar classes e estruturas de programação que são reaproveitadas por diversas aplicações. <br>
+
+Além do mais, tem uma sintaxe simples, o que facilita a aprendizagem. Isso se consolidou porque, em seu processo de desenvolvimento, foram adotadas facilidades das linguagens C e C++, além de outros recursos mais avançados provenientes das linguagens (como Java).</P>
+
+
+<h3>As principais características do C# são: <br></h3>
+<p><b>Suporte à orientação a objetos:</b> por implementar o paradigma da orientação a objetos, o C# permite a criação de classes, objetos e interfaces, além da aplicação de conceitos como herança, polimorfismo e encapsulamento. <br><br>
+
+<b>Segurança de tipos:</b> a linguagem C# é fortemente tipada. Então, antes de declarar uma variável, é necessário declarar o seu tipo. Depois disso, no decorrer da execução, a variável não pode assumir outro tipo. <br><br>
+
+<b>Garbage collector:</b> é a ferramenta que se encarrega de descartar da memória, de forma automática, objetos que a aplicação não utilizar mais, Assim, quem desenvolve usando C#, não precisa se preocupar com o gerenciamento de memória. <br><br>
+
+<b>Tratamento de exceções:</b> proporciona a possibilidade de capturar e tratar uma série de exceções que podem ocorrer durante a execução da aplicação. <br><br>
+
+<b>Interoperabilidade:</b> dá a possibilidade de interagir com soluções criadas em outras linguagens como C++, por exemplo. Isso é feito por meio do recurso da CLR que permite o consumo das bibliotecas existentes.</p> <br>
+
+
+<h1>C# e orientação a objetos</h1> <br>
+<p>Desde o início, o C# já foi desenvolvido com suporte ao paradigma de programação da orientação a objetos — a famosa OO. <br>
+
+Esse paradigma (modelo de programação) permite criar softwares de maneira a <b>aproximar conceitos do mundo real com o código.</b> <br>
+É possível, por exemplo, traduzir para o código algumas ideias como “pessoa” ou “equipamento” usando esse paradigma. <br>
+
+Essas palavras vão representar objetos de software que se comunicarão e implementarão uma funcionalidade do sistema. <br>
+
+Esse estilo de programação não surgiu com o C# ou com o Java — que é uma das linguagens responsáveis pela popularização do paradigma. <br>
+
+Na verdade, a orientação a objetos nasceu lá nos anos de 1960, na Noruega, com o objetivo de criar sistemas mais confiáveis, flexíveis e de fácil manutenção. <br>
+
+Desde então, a orientação a objetos se consolidou no mercado de desenvolvimento.</p> <br>
+
+<h3>Algumas das principais vantagens de desenvolver sob o guarda-chuva da OO são:</h3>
+<p><b>Curva de aprendizagem:</b> a OO é uma forma de programar. Sendo assim, uma vez que uma pessoa conhece bem seus fundamentos, a linguagem é somente mais uma ferramenta. <br>
+<b>Reutilização:</b> esta é uma das principais forças na adoção da OO, já que é possível reaproveitar classes e tipos entre projetos diferentes. Assim, reduz o tempo de implementação e diminui os custos com a manutenção da aplicação.</p> <br>
+
+<h1>Classes e objetos</h1>
+<h2>Classes: </h2>
+<p>Uma forma fácil de entender esse conceito é a partir da analogia com carros. Vamos lá. <br>
+
+É possível classificar os carros, com base em algumas características comuns como, por exemplo, quantidade de portas, placa, modelo e daí por diante.
+
+Assim como nos carros, na orientação a objetos, uma classe ajuda a identificar e *<i>classificar</i> vários objetos que compartilham características comuns. <br>
+
+Em uma definição mais formal, classe é um modelo, um tipo de planta que serve para criar objetos.</p>
+<p>Em C#, uma classe pode ser apresentada da seguinte forma:</p>
+<img src="class.jpeg" alt=""> <br>
+
+<p>A partir disso, são definidos atributos e características observáveis dos objetos que são importantes para executar o sistema. <br>
+
+Um exemplo disso é a classe “conta”, na qual, após um processo de análise, abstraiu o número, o titular e o saldo como atributos importantes. <br>
+
+Mas a classe não define apenas atributos. Ela também pode estabelecer os comportamentos que um objeto tem.</p>
+<p>Sendo assim, em resumo, a classe define os atributos e os métodos que os objetos de uma classe terão, como nesse exemplo:</p>
+<img src="class2.jpeg" alt=""> <br>
+<p>Enfim, as classes são o pontapé inicial para programar de forma orientada a objetos. Tanto é que existe quem defenda a mudança para “programação orientada a classes”.</p> <br>
+
+<h2>Objetos:</h2>
+<p>Os membros que estão sob a classificação de uma classe são os objetos. Em geral, eles representam um elemento específico de um universo maior. <br>
+
+Se você prestar atenção ao seu redor, muito do que você vê são objetos, não é? Livros, televisão, computador e daí por diante. <br>
+Para criar um objeto em C# usamos a palavra reservada new, assim como em outras linguagens.</p>
+<p>Aqui está um exemplo da criação de objetos:</p> <br>
+<img src="new.jpeg" alt=""> <br>
+<p>Como você já sabe, a classe define os atributos comuns aos seus objetos. Esses atributos são, portanto, as características de um objeto. O valor de cada característica é que vai nos ajudar a diferenciar um objeto do outro. <br>
+
+Por exemplo, temos dois objetos do tipo “pessoa” e cada propriedade vai conter um conjunto de valores que vai nos permitir distinguir um do outro.</p> <br>
+<img src="new2.jpeg" alt=""> <br>
+
+<h1>Outros conceitos da OO</h1>
+<p>Ao falar sobre OOs, alguns conceitos são centrais e dão sustentação para esse paradigma. É o que se denomina de pilares da Orientação a Objetos. <br>
+Os principais pilares são:</p> <br>
+<img src="pilares.jpeg" alt=""> <br>
+
+<h2>Polimorfismo</h2>
+<P>Como o próprio nome sugere, o polimorfismo significa “várias formas”. Na O.O. o polimorfismo compreende a capacidade de um objeto de se comportar de maneira distinta ao receber uma mensagem. Como, por exemplo:</P><br>
+<img src="polimorf.jpeg" alt=""> <br>
+<p>Na classe <i>Veiculo</i> temos um método <i>Mover()</i> que é polimórfico. Nele cada subclasse tem uma implementação particular. <br>
+
+No método <i>Main</i>, em tempo de execução, o programa vai chamar o método do tipo concreto da variável. <br>
+
+Afinal, de acordo com sua subclasse, o veículo se movimenta de maneira diferente. Esta é somente uma das formas de implementar o polimorfismo.</p> <br>
+ <h2>Herança</h2>
+ <p>A herança permite criar novas classes a partir de outras que já existem e, a partir disso, aproveitar as definições dos atributos e métodos de uma classe em outra. <br>
+
+Este é um mecanismo fundamental dentro da O.O., porque, a partir dele, é possível reaproveitar código. <br>
+Observe a definição da classe <i>Funcionario.</i></p> <br>
+<img src="funci.jpeg" alt=""> <br>
+<p>No próximo trecho de código vemos a definição de uma herança em C#, com o uso do operador :. </p> <br>
+<img src="funci2.jpeg" alt=""> <br>
+<p>A classe <i>Desenvolvedor</i> está herdando os atributos e os métodos da classe <i>Funcionario</i> pelo mecanismo da herança. <br>
+
+A partir de agora as propriedades <i>Nome, CPF</i> e <i>Salario</i>, bem como o método <i>GetBonificacao</i> também existem na definição da classe <i>Desenvolvedor</i>.</p><br>
+
+<h2>Abstração</h2>
+<p>A abstração é uma chave para entender a OO. Acima de tudo, a abstração é um processo mental, no qual é possível extrair significados de uma situação ou problema com base em nossas experiências. <br>
+
+Um ponto de abstração é conseguir isolar o que é importante representar num sistema. <br>
+
+Imagine uma pessoa responsável por desenvolver um sistema de gestão em empresas de mármore e granito. Para entender o problema, talvez seja necessário definir entidades como <i>bloco</i> ou <i>chapa</i>, para estabelecer itens relevantes para a aplicação.</p> <br>
+
+<p>Esse é o processo de abstração. Em seu livro <a href="https://www.casadocodigo.com.br/products/livro-design-paterns-csharp?_pos=1&_sid=6f13059ba&_ss=r&__hstc=164960864.331838647165ae4f8294000e01bebafd.1778977261695.1778977261695.1778977261695.1&__hssc=164960864.2.1778977261697&__hsfp=815f34b575dcd53aa574549f983d4112">Design Patterns com C#</a> , Rodrigo Gonçalves Santana apresenta uma definição interessante sobre isso:</p>
+<p><i>“A abstração é o desafio de identificar características de algo do mundo real e transformá-las em uma classe. ” (SANTANA, 2020, p.5 )</i></p> <br>
+
+<h2>Encapsulamento</h2>
+<p>No universo da O.O, o encapsulamento é uma habilidade do objeto de esconder seus dados ou comportamentos do mundo “exterior”. <br>
+
+O principal objetivo é implementar maior segurança ao código. Para isso, o encapsulamento oculta uma parte do código para que alterações em um objeto não afetem outras partes e interações do sistema. <br>
+
+Vamos pensar, por exemplo, na seguinte situação: o saldo de uma conta bancária. Não existe dúvida de que não se deve alterá-lo ou manipulá-lo de forma direta. <br>
+
+Apenas através de métodos ou propriedades, que permitem o lançamento de créditos e débitos. Olhe o exemplo:</p> <br>
+<img src="capsula.jpeg" alt=""> <br>
+<p>Na definição da classe ContaCorrente temos os campos numeroAgencia, conta e saldo que já tem 100 como valor default. <br>
+
+Todos estão com a visibilidade public, o que fere o princípio de encapsulamento. Afinal de contas, após a criação de um objeto do tipo ContaCorrente, existe a possibilidade de alterar o valor do campo saldo. <br>
+
+Os recursos de visibilidade podem solucionar esse problema. É só tornar o campo como “private” (visível apenas dentro da classe) ou “protected” (visível somente no assembly). <br>
+
+Para acessar, usamos métodos ou propriedades públicas. Dessa forma:</p> <br>
+<img src="capsula2.jpeg" alt=""> <br>
+<p>Com a implementação de um nível de encapsulamento, existe maior segurança ao manipular o campo saldo. Nesse caso, existe uma campo privado com acesso através de métodos públicos.</p> <br>
+
+<h1>Ferramentas para desenvolver com C Sharp</h1>
+<p>Você pode começar a desenvolver em C# com um editor de texto. Pode ser até o bloco de notas do Windows. O que não pode faltar é a instalação do .NET no seu ambiente — seja ele Windows ou Linux. <br>
+
+Mas, programar no bloco de notas só se for estritamente necessário, ok? 🥲 <br>
+Hoje em dia, existem diversas ferramentas — entre pagas e gratuitas, para atender às necessidades.Com estas ferramentas podemos editar nossos códigos, executar depurações, acessar ambientes CLI (command line interface), executar scripts, acessar e manipular base de dados, além de compilar nossa solução. <br>
+Tudo isso em um único ambiente que aumenta, de maneira exponencial, nossa produtividade no momento de criar nossas aplicações.</p><br>
+ <h2>Ferramentas</h2>
+ <p><b>Visual Studio:</b> O Visual Studio é uma IDE (ambiente integrado de desenvolvimento) criada pela Microsoft com atenção especial a plataforma .NET.
+
+De forma geral, ele serve para desenvolver soluções de aplicativos, programas e websites, o que possibilita usar C#, Visual Basic .NET, C++, F#, Python, Javascript e muitas outras. <br>
+<b>VS Code:</b> O Visual Studio Code é o editor de códigos abertos da Microsoft, disponível no Windows, Linux e Mac.
+
+Por se tratar de um super editor de código, você precisa instalar algumas extensões para C#.
+
+De forma geral, ele possui suporte para várias linguagens, uma interface agradável e é simples de usar, além de ser uma ferramenta muito leve em comparação a uma IDE tradicional. <br>
+<b>Rider:</b> No universo das IDEs para trabalhar com C#, existe também o Rider, um produto proprietário da JetBrains. <br>
+
+As principais características dessa ferramenta são: <br>
+
+É cross-plataform; <br>
+Toma como base as ferramentas IntelliJ e o ReSharp, plugin que adiciona recursos avançados ao Visual Studio.</p> <br>
+
+<h1>Como aprender sobre C# e .NET de forma gratuita</h1>
+<p>Você pode acessar as primeiras aulas da Formação C# e orientação a objetos, da <a href="https://www.alura.com.br/escola-programacao">Escola de Programação</a> da Alura e continuar aprendendo sobre temas como: <br>
+1. C#: criando sua primeira aplicação <br>
+2. C#: aplicando a Orientação a Objetos <br>
+3. C#: dominando Orientação a Objetos <br>
+4. C#: consumindo API, gravando arquivos e utilizando o LINQ </p> <br>
+
+<a href="https://www.youtube.com/watch?v=uOagLB3uyeU">Como aprender melhor? Com Diogo Pires | #HipstersPontoTube</a></p><br>
+
+<h1>Conclusão</h1>
+<p>Neste resumo, entendemos o que é o C#, vimos que o C# é uma linguagem orientada a objetos, o principal paradigma do mercado. Não deixamos de comentar também sobre as ferramentas que podem dar suporte no trabalho com a linguagem, como o.NET. <br>
+O C# é uma linguagem que está em alta no mercado, em constante evolução com a adição de novos recursos por parte da Microsoft. Não é à toa que, há alguns anos, consolidou-se como umas das principais linguagens de propósito geral. <br></p>
+
+<img src="" alt="">
+
+
+
+    <a href="../index.html" class="voltar">← Voltar para as linguagens</a>
+  </main>
+</body>
+</html>
